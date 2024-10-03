@@ -5,11 +5,11 @@ const generateMockData = () =>
     return {
         activeUsersOverTime: getActiveUsersOverTime(),
         topSearchQueries: [
-            {name: "React", value: getRandomInt(100, 500)},
-            {name: "Redux", value: getRandomInt(50, 300)},
-            {name: "WebSocket", value: getRandomInt(20, 200)},
-            {name: "API Integration", value: getRandomInt(30, 150)},
-            {name: "Context API", value: getRandomInt(40, 100)},
+            {name: "Home", value: getRandomInt(100, 500)},
+            {name: "Pricing", value: getRandomInt(50, 300)},
+            {name: "About", value: getRandomInt(20, 200)},
+            {name: "Signup", value: getRandomInt(30, 150)},
+            {name: "Blog", value: getRandomInt(40, 100)},
         ],
         userActivityByRegion: [
             getRandomInt(1, 100),
@@ -22,7 +22,7 @@ const generateMockData = () =>
         })),
         retentionRateOverTime: Array.from({length: 7}, (_, i) => ({
             time: `Week ${i + 1}`,
-            RetentionRate: getRandomInt(50, 90), // Retention rate in percentage
+            RetentionRate: getRandomInt(50, 90),
         })),
         mostPopularFeatures: [
             {name: "Dark Mode", value: getRandomInt(500, 1500)},
@@ -31,7 +31,7 @@ const generateMockData = () =>
         ],
         churnRate: Array.from({length: 7}, (_, i) => ({
             time: `Month ${i + 1}`,
-            ChurnRate: getRandomInt(2, 10), // Churn rate in percentage
+            ChurnRate: getRandomInt(2, 10),
         })),
         userDemographics: [
             {category: "18-24", age: getRandomInt(100, 500)},
